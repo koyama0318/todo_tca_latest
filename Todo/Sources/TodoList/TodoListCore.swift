@@ -1,4 +1,3 @@
-// TODO: 実装
-func hoge() {
-    print("ListCore")
-}
+import ComposableArchitecture
+
+struct TodoListCore {}
