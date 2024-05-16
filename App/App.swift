@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct todo_tca_latest: App {
+struct App: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

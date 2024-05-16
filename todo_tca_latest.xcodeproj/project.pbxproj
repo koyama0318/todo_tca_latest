@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6BC008EA2BF58D1A006C1043 /* todo_tca_latest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC008E92BF58D1A006C1043 /* todo_tca_latest.swift */; };
+		6BC008EA2BF58D1A006C1043 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC008E92BF58D1A006C1043 /* App.swift */; };
 		6BC008EC2BF58D1A006C1043 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC008EB2BF58D1A006C1043 /* ContentView.swift */; };
 		6BC008F02BF58D1B006C1043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BC008EF2BF58D1B006C1043 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6BC008E62BF58D19006C1043 /* todo_tca_latest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todo_tca_latest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6BC008E92BF58D1A006C1043 /* todo_tca_latest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todo_tca_latest.swift; sourceTree = "<group>"; };
+		6BC008E92BF58D1A006C1043 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		6BC008EB2BF58D1A006C1043 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6BC008EF2BF58D1B006C1043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6BC008F12BF58D1B006C1043 /* todo_tca_latest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = todo_tca_latest.entitlements; sourceTree = "<group>"; };
+		6BC008F12BF58D1B006C1043 /* App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
+		6BC009162BF59006006C1043 /* Todo */ = {isa = PBXFileReference; lastKnownFileType = text; path = Todo; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,7 +35,8 @@
 		6BC008DD2BF58D19006C1043 = {
 			isa = PBXGroup;
 			children = (
-				6BC008E82BF58D19006C1043 /* todo_tca_latest */,
+				6BC009162BF59006006C1043 /* Todo */,
+				6BC008E82BF58D19006C1043 /* App */,
 				6BC008E72BF58D19006C1043 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,15 +49,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6BC008E82BF58D19006C1043 /* todo_tca_latest */ = {
+		6BC008E82BF58D19006C1043 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				6BC008E92BF58D1A006C1043 /* todo_tca_latest.swift */,
+				6BC008E92BF58D1A006C1043 /* App.swift */,
 				6BC008EB2BF58D1A006C1043 /* ContentView.swift */,
 				6BC008EF2BF58D1B006C1043 /* Assets.xcassets */,
-				6BC008F12BF58D1B006C1043 /* todo_tca_latest.entitlements */,
+				6BC008F12BF58D1B006C1043 /* App.entitlements */,
 			);
-			path = todo_tca_latest;
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BC008EC2BF58D1A006C1043 /* ContentView.swift in Sources */,
-				6BC008EA2BF58D1A006C1043 /* todo_tca_latest.swift in Sources */,
+				6BC008EA2BF58D1A006C1043 /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +189,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -242,6 +245,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
