@@ -21,7 +21,6 @@ let package = Package(
         .target(
             name: "TodoList",
             dependencies: [
-                "AppFeature",
                 .product(name: "ComposableArchitecture", package: "swift-composable-architecture")
             ]
         )
