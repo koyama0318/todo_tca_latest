@@ -1,13 +1,22 @@
 import ComposableArchitecture
+import Foundation
 import Model
 
 public struct TodoClient {
-    let fetch: () async throws -> [Todo]
+    public let fetchAll: () async throws -> [Todo]
 }
 
 extension TodoClient: DependencyKey {
   public static let liveValue = Self(
-    fetch: { return [] }
+    fetchAll: {
+        return [
+            Todo(id: UUID().uuidString, text: "todo1"),
+            Todo(id: UUID().uuidString, text: "todo2"),
+            Todo(id: UUID().uuidString, text: "todo3"),
+            Todo(id: UUID().uuidString, text: "todo4"),
+            Todo(id: UUID().uuidString, text: "todo5"),
+        ]
+    }
   )
 }
 

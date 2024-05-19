@@ -1,5 +1,6 @@
 import SwiftUI
 import ComposableArchitecture
+import UIComponent
 
 public struct TodoListView: View {
     let store: StoreOf<TodoListFeature>
@@ -12,7 +13,11 @@ public struct TodoListView: View {
     
     public var body: some View {
         VStack {
-            Text("todo")
+            ListView(
+                items: store.todos.map { ListItem(id: $0.id, text: $0.text) },
+                onTap: { store.send(.todoTapped) }
+            )
         }
+        .onAppear { store.send(.viewAppeared) }
     }
 }

@@ -14,6 +14,7 @@
 
 /* Begin PBXFileReference section */
 		6B9F57522BF8DF640019923C /* Model */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Model; sourceTree = "<group>"; };
+		6BB13DD22BF9D57600B211A6 /* UIComponent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UIComponent; sourceTree = "<group>"; };
 		6BC008E62BF58D19006C1043 /* todo_tca_latest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todo_tca_latest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BC008E92BF58D1A006C1043 /* todo_tca_latest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todo_tca_latest.swift; sourceTree = "<group>"; };
 		6BC008EF2BF58D1B006C1043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -44,6 +45,7 @@
 		6BC008DD2BF58D19006C1043 = {
 			isa = PBXGroup;
 			children = (
+				6BB13DD22BF9D57600B211A6 /* UIComponent */,
 				6B9F57522BF8DF640019923C /* Model */,
 				6BC5CAE22BF8DD66001A8CB1 /* Client */,
 				6BC009162BF59006006C1043 /* Todo */,
