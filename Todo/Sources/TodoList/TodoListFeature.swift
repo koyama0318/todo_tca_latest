@@ -1,30 +1,45 @@
-import ComposableArchitecture
 import Client
+import TodoDetail
+import ComposableArchitecture
+import Foundation
 import Model
 
 @Reducer
 struct TodoListFeature {
     @ObservableState
     struct State {
+        @Presents var destination: Destination.State?
         var todos: [Todo] = []
     }
     
+    @Reducer
+      enum Destination {
+          case detail(TodoDetailFeature)
+      }
+    
     enum Action {
+        case destination(PresentationAction<Destination.Action>)
         case viewAppeared
-        case todoTapped
+        case todoTapped(id: String)
         case fetchAllResponse(Result<[Todo], Error>)
     }
     
-    @Dependency(\.todoClient) var todoClient
+    @Dependency(TodoClient.self) var todoClient
     
     var body: some Reducer<State, Action> {
         Reduce { state, action in
             switch action {
+            case .destination(_):
+                return .none
+                
             case .viewAppeared:
                 return fetchTodoListAll()
                 
-            case .todoTapped:
-                print("todo tap")
+            case .todoTapped(let id):
+                guard let todo = state.todos.first(where: { $0.id == id }) else {
+                    return .none
+                }
+                state.destination = .detail(.init(todo: todo))
                 return .none
                 
             case .fetchAllResponse(.success(let todos)):
@@ -36,6 +51,7 @@ struct TodoListFeature {
                 return .none
             }
         }
+        .ifLet(\.$destination, action: \.destination)
     }
     
     private func fetchTodoListAll() -> Effect<Action> {

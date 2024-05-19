@@ -2,9 +2,9 @@ import SwiftUI
 
 public struct ListView: View {
     let items: [ListItem]
-    let onTap: () -> Void
+    let onTap: (_ id: String) -> Void
     
-    public init(items: [ListItem], onTap: @escaping () -> Void) {
+    public init(items: [ListItem], onTap: @escaping (String) -> Void) {
         self.items = items
         self.onTap = onTap
     }
@@ -12,7 +12,9 @@ public struct ListView: View {
     public var body: some View {
         ForEach(items) { item in
             ListItemView(item: item)
-                .onTapGesture(perform: onTap)
+                .onTapGesture {
+                    onTap(item.id)
+                }
         }
     }
 }
@@ -46,5 +48,5 @@ let mockListItems: [ListItem] = [
 ]
 
 #Preview {
-    ListView(items: mockListItems, onTap: {})
+    ListView(items: mockListItems, onTap: { _ in })
 }

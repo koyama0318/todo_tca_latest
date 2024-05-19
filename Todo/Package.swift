@@ -11,6 +11,9 @@ let package = Package(
         .library(
             name: "TodoList",
             targets: ["TodoList"]),
+        .library(
+            name: "TodoDetail",
+            targets: ["TodoDetail"]),
     ],
     dependencies: [
         .package(url: "https://github.com/pointfreeco/swift-composable-architecture", exact: "1.10.4"),
@@ -23,6 +26,16 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "TodoList",
+            dependencies: [
+                .product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
+                "Model",
+                "Client",
+                "UIComponent",
+                "TodoDetail",
+            ]
+        ),
+        .target(
+            name: "TodoDetail",
             dependencies: [
                 .product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
                 "Model",

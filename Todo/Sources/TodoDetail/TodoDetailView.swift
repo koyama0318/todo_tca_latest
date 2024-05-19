@@ -1,8 +1,20 @@
-//
-//  File.swift
-//  
-//
-//  Created by koyama on 2024/05/18.
-//
+import SwiftUI
+import ComposableArchitecture
 
-import Foundation
+public struct TodoDetailView: View {
+    let store: StoreOf<TodoDetailFeature>
+    
+    public init(store: StoreOf<TodoDetailFeature>) {
+        self.store = store
+    }
+    
+    public var body: some View {
+        VStack {
+            Button(action: { store.send(.closeButtonTapped) }) {
+                Text("close")
+            }
+            Text(store.todo.id)
+            Text(store.todo.text)
+        }
+    }
+}
