@@ -3,7 +3,7 @@ import Foundation
 import Model
 
 public struct TodoClient {
-    public let fetchAll: () async throws -> [Todo]
+    public var fetchAll: () async throws -> [Todo]
 }
 
 extension TodoClient: DependencyKey {

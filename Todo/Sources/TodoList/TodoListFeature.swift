@@ -5,19 +5,24 @@ import Foundation
 import Model
 
 @Reducer
-struct TodoListFeature {
+public struct TodoListFeature {
     @ObservableState
-    struct State {
+    public struct State: Equatable {
         @Presents var destination: Destination.State?
-        var todos: [Todo] = []
+        var todos: [Todo]
+        
+        public init(todos: [Todo] = []) {
+            self.destination = nil
+            self.todos = todos
+        }
     }
     
-    @Reducer
-      enum Destination {
-          case detail(TodoDetailFeature)
-      }
+    @Reducer(state: .equatable)
+    public enum Destination {
+        case detail(TodoDetailFeature)
+    }
     
-    enum Action {
+    public enum Action {
         case destination(PresentationAction<Destination.Action>)
         case viewAppeared
         case todoTapped(id: String)
@@ -26,7 +31,9 @@ struct TodoListFeature {
     
     @Dependency(TodoClient.self) var todoClient
     
-    var body: some Reducer<State, Action> {
+    public init() {}
+    
+    public var body: some Reducer<State, Action> {
         Reduce { state, action in
             switch action {
             case .destination(_):

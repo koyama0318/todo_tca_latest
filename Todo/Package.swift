@@ -34,6 +34,9 @@ let package = Package(
                 "TodoDetail",
             ]
         ),
+        .testTarget(
+            name: "TodoListTests",
+            dependencies: ["TodoList"]),
         .target(
             name: "TodoDetail",
             dependencies: [
@@ -42,6 +45,9 @@ let package = Package(
                 "Client",
                 "UIComponent",
             ]
-        )
+        ),
+        .testTarget(
+            name: "TodoDetailTests",
+            dependencies: ["TodoDetail"]),
     ]
 )

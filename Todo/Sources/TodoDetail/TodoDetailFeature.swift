@@ -6,7 +6,7 @@ import Model
 @Reducer
 public struct TodoDetailFeature {
     @ObservableState
-    public struct State {
+    public struct State: Equatable {
         var todo: Todo
         
         public init(todo: Todo) {
