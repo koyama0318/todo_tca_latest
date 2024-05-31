@@ -1,11 +1,13 @@
 import Foundation
 
-public struct Todo: Equatable {
-    public init(id: String, text: String) {
-        self.id = id
-        self.text = text
-    }
-    
+public struct Todo: Equatable, Codable {
     public let id: String
-    public let text: String
+    public let task: String
+    public let completed: Bool
+    
+    public init(id: String, task: String, completed: Bool) {
+        self.id = id
+        self.task = task
+        self.completed = completed
+    }
 }

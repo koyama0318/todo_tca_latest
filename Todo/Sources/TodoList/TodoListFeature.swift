@@ -25,6 +25,7 @@ public struct TodoListFeature {
     public enum Action {
         case destination(PresentationAction<Destination.Action>)
         case viewAppeared
+        case button
         case todoTapped(id: String)
         case fetchAllResponse(Result<[Todo], Error>)
     }
@@ -40,6 +41,9 @@ public struct TodoListFeature {
                 return .none
                 
             case .viewAppeared:
+                return fetchTodoListAll()
+                
+            case .button:
                 return fetchTodoListAll()
                 
             case .todoTapped(let id):

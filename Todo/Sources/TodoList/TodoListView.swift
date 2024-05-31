@@ -16,9 +16,13 @@ public struct TodoListView: View {
         NavigationStack {
             VStack {
                 ListView(
-                    items: store.todos.map { ListItem(id: $0.id, text: $0.text) },
+                    items: store.todos.map { ListItem(id: $0.id, text: $0.task, isChecked: false) },
+                    //items: store.todos.map { ListItem(id: $0.id, text: $0.task, isChecked: $0.completed) },
                     onTap: { store.send(.todoTapped(id: $0)) }
                 )
+                Button(action: {store.send(.button)}) {
+                    Text("aa")
+                }
             }
             .onAppear { store.send(.viewAppeared) }
             .navigationDestination(

@@ -36,5 +36,458 @@
             landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1662DD36-EF5E-4288-9B5A-0BD45FAA2277"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Client/Sources/Client/TodoClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "liveValue"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "1662DD36-EF5E-4288-9B5A-0BD45FAA2277 - cd348593059cc77c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 () async throws -&gt; Swift.Array&lt;Model.Todo&gt; in variable initialization expression of static Client.TodoClient.liveValue : Client.TodoClient"
+                  moduleName = "todo_tca_latest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/koyama/dev/todo_tca_latest/Client/Sources/Client/TodoClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "1662DD36-EF5E-4288-9B5A-0BD45FAA2277 - cd348593059cc77c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 () async throws -&gt; Swift.Array&lt;Model.Todo&gt; in variable initialization expression of static Client.TodoClient.liveValue : Client.TodoClient"
+                  moduleName = "todo_tca_latest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/koyama/dev/todo_tca_latest/Client/Sources/Client/TodoClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "172">
+               </Location>
+               <Location
+                  uuid = "1662DD36-EF5E-4288-9B5A-0BD45FAA2277 - cd348593059cc69d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 () async throws -&gt; Swift.Array&lt;Model.Todo&gt; in variable initialization expression of static Client.TodoClient.liveValue : Client.TodoClient"
+                  moduleName = "todo_tca_latest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/koyama/dev/todo_tca_latest/Client/Sources/Client/TodoClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "196">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FF752F9A-2CC9-4D8A-A552-0A570D38A233"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Client/Sources/Client/TodoClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "liveValue"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "83C0DEEA-0916-46E2-8006-6B317AA89BF7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Client/Sources/Client/TodoClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "liveValue"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "83C0DEEA-0916-46E2-8006-6B317AA89BF7 - cd348593059cc619"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 () async throws -&gt; Swift.Array&lt;Model.Todo&gt; in variable initialization expression of static Client.TodoClient.liveValue : Client.TodoClient"
+                  moduleName = "todo_tca_latest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/koyama/dev/todo_tca_latest/Client/Sources/Client/TodoClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "756">
+               </Location>
+               <Location
+                  uuid = "83C0DEEA-0916-46E2-8006-6B317AA89BF7 - cd348593059cc619"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 () async throws -&gt; Swift.Array&lt;Model.Todo&gt; in variable initialization expression of static Client.TodoClient.liveValue : Client.TodoClient"
+                  moduleName = "todo_tca_latest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/koyama/dev/todo_tca_latest/Client/Sources/Client/TodoClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "772">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BD9282CD-602C-4E73-9EDA-423832E00B10"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Client/Sources/Networking/HTTPClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "sendRequest(urlString:method:body:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3624DC92-8A5A-4AEF-AAF9-4B7B28BEA53D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Client/Sources/Networking/HTTPClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "sendRequest(urlString:method:body:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0DFA5875-DFA2-44EB-A7C0-3E7D4CC4921B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Client/Sources/Networking/HTTPClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "sendRequest(urlString:method:body:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "0DFA5875-DFA2-44EB-A7C0-3E7D4CC4921B - 81e7f3736cf22be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Networking.sendRequest&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_1: Swift.Encodable&gt;(urlString: Swift.String, method: Networking.HTTPMethod, body: Swift.Optional&lt;&#x3c4;_0_1&gt;) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Networking.NetworkError&gt;"
+                  moduleName = "todo_tca_latest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/koyama/dev/todo_tca_latest/Client/Sources/Networking/HTTPClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "1888">
+               </Location>
+               <Location
+                  uuid = "0DFA5875-DFA2-44EB-A7C0-3E7D4CC4921B - a4000414d1c3d4b9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for Networking.sendRequest&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_1: Swift.Encodable&gt;(urlString: Swift.String, method: Networking.HTTPMethod, body: Swift.Optional&lt;&#x3c4;_0_1&gt;) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Networking.NetworkError&gt;"
+                  moduleName = "todo_tca_latest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/koyama/dev/todo_tca_latest/Client/Sources/Networking/HTTPClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "1868">
+               </Location>
+               <Location
+                  uuid = "0DFA5875-DFA2-44EB-A7C0-3E7D4CC4921B - 81e7f3736cf22be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Networking.sendRequest&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_1: Swift.Encodable&gt;(urlString: Swift.String, method: Networking.HTTPMethod, body: Swift.Optional&lt;&#x3c4;_0_1&gt;) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Networking.NetworkError&gt;"
+                  moduleName = "todo_tca_latest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/koyama/dev/todo_tca_latest/Client/Sources/Networking/HTTPClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "1820">
+               </Location>
+               <Location
+                  uuid = "0DFA5875-DFA2-44EB-A7C0-3E7D4CC4921B - a4000414d1c3d4b9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for Networking.sendRequest&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_1: Swift.Encodable&gt;(urlString: Swift.String, method: Networking.HTTPMethod, body: Swift.Optional&lt;&#x3c4;_0_1&gt;) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Networking.NetworkError&gt;"
+                  moduleName = "todo_tca_latest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/koyama/dev/todo_tca_latest/Client/Sources/Networking/HTTPClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "1800">
+               </Location>
+               <Location
+                  uuid = "0DFA5875-DFA2-44EB-A7C0-3E7D4CC4921B - 81e7f3736cf22be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Networking.sendRequest&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_1: Swift.Encodable&gt;(urlString: Swift.String, method: Networking.HTTPMethod, body: Swift.Optional&lt;&#x3c4;_0_1&gt;) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Networking.NetworkError&gt;"
+                  moduleName = "todo_tca_latest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/koyama/dev/todo_tca_latest/Client/Sources/Networking/HTTPClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "2352">
+               </Location>
+               <Location
+                  uuid = "0DFA5875-DFA2-44EB-A7C0-3E7D4CC4921B - a4000414d1c3d4b9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for Networking.sendRequest&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_1: Swift.Encodable&gt;(urlString: Swift.String, method: Networking.HTTPMethod, body: Swift.Optional&lt;&#x3c4;_0_1&gt;) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Networking.NetworkError&gt;"
+                  moduleName = "todo_tca_latest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/koyama/dev/todo_tca_latest/Client/Sources/Networking/HTTPClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "2328">
+               </Location>
+               <Location
+                  uuid = "0DFA5875-DFA2-44EB-A7C0-3E7D4CC4921B - 81e7f3736cf22be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Networking.sendRequest&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_1: Swift.Encodable&gt;(urlString: Swift.String, method: Networking.HTTPMethod, body: Swift.Optional&lt;&#x3c4;_0_1&gt;) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Networking.NetworkError&gt;"
+                  moduleName = "todo_tca_latest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/koyama/dev/todo_tca_latest/Client/Sources/Networking/HTTPClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "2324">
+               </Location>
+               <Location
+                  uuid = "0DFA5875-DFA2-44EB-A7C0-3E7D4CC4921B - a4000414d1c3d4b9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for Networking.sendRequest&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_1: Swift.Encodable&gt;(urlString: Swift.String, method: Networking.HTTPMethod, body: Swift.Optional&lt;&#x3c4;_0_1&gt;) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Networking.NetworkError&gt;"
+                  moduleName = "todo_tca_latest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/koyama/dev/todo_tca_latest/Client/Sources/Networking/HTTPClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "2300">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "07AD7267-A3E6-4E25-9C06-00F338F0A575"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Client/Sources/Networking/HTTPClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "sendRequest(urlString:method:body:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "07AD7267-A3E6-4E25-9C06-00F338F0A575 - 81e7f3736cf2004"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Networking.sendRequest&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_1: Swift.Encodable&gt;(urlString: Swift.String, method: Networking.HTTPMethod, body: Swift.Optional&lt;&#x3c4;_0_1&gt;) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Networking.NetworkError&gt;"
+                  moduleName = "todo_tca_latest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/koyama/dev/todo_tca_latest/Client/Sources/Networking/HTTPClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "1076">
+               </Location>
+               <Location
+                  uuid = "07AD7267-A3E6-4E25-9C06-00F338F0A575 - a4000414d1c3d603"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for Networking.sendRequest&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_1: Swift.Encodable&gt;(urlString: Swift.String, method: Networking.HTTPMethod, body: Swift.Optional&lt;&#x3c4;_0_1&gt;) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Networking.NetworkError&gt;"
+                  moduleName = "todo_tca_latest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/koyama/dev/todo_tca_latest/Client/Sources/Networking/HTTPClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "1044">
+               </Location>
+               <Location
+                  uuid = "07AD7267-A3E6-4E25-9C06-00F338F0A575 - 81e7f3736cf21c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Networking.sendRequest&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_1: Swift.Encodable&gt;(urlString: Swift.String, method: Networking.HTTPMethod, body: Swift.Optional&lt;&#x3c4;_0_1&gt;) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Networking.NetworkError&gt;"
+                  moduleName = "todo_tca_latest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/koyama/dev/todo_tca_latest/Client/Sources/Networking/HTTPClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "2060">
+               </Location>
+               <Location
+                  uuid = "07AD7267-A3E6-4E25-9C06-00F338F0A575 - a4000414d1c3d7c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for Networking.sendRequest&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_1: Swift.Encodable&gt;(urlString: Swift.String, method: Networking.HTTPMethod, body: Swift.Optional&lt;&#x3c4;_0_1&gt;) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Networking.NetworkError&gt;"
+                  moduleName = "todo_tca_latest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/koyama/dev/todo_tca_latest/Client/Sources/Networking/HTTPClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "2032">
+               </Location>
+               <Location
+                  uuid = "07AD7267-A3E6-4E25-9C06-00F338F0A575 - 81e7f3736cf2142"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Networking.sendRequest&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_1: Swift.Encodable&gt;(urlString: Swift.String, method: Networking.HTTPMethod, body: Swift.Optional&lt;&#x3c4;_0_1&gt;) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Networking.NetworkError&gt;"
+                  moduleName = "todo_tca_latest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/koyama/dev/todo_tca_latest/Client/Sources/Networking/HTTPClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "1640">
+               </Location>
+               <Location
+                  uuid = "07AD7267-A3E6-4E25-9C06-00F338F0A575 - a4000414d1c3d745"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for Networking.sendRequest&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_1: Swift.Encodable&gt;(urlString: Swift.String, method: Networking.HTTPMethod, body: Swift.Optional&lt;&#x3c4;_0_1&gt;) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Networking.NetworkError&gt;"
+                  moduleName = "todo_tca_latest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/koyama/dev/todo_tca_latest/Client/Sources/Networking/HTTPClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "1616">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "91AE156D-6F48-46E8-84C2-4B9B5317FF32"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Client/Sources/Networking/HTTPClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "sendRequest(urlString:method:body:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "91AE156D-6F48-46E8-84C2-4B9B5317FF32 - 81e7f3736cf21a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Networking.sendRequest&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_1: Swift.Encodable&gt;(urlString: Swift.String, method: Networking.HTTPMethod, body: Swift.Optional&lt;&#x3c4;_0_1&gt;) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Networking.NetworkError&gt;"
+                  moduleName = "todo_tca_latest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/koyama/dev/todo_tca_latest/Client/Sources/Networking/HTTPClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "1368">
+               </Location>
+               <Location
+                  uuid = "91AE156D-6F48-46E8-84C2-4B9B5317FF32 - a4000414d1c3d7a0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for Networking.sendRequest&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_1: Swift.Encodable&gt;(urlString: Swift.String, method: Networking.HTTPMethod, body: Swift.Optional&lt;&#x3c4;_0_1&gt;) async -&gt; Swift.Result&lt;&#x3c4;_0_0, Networking.NetworkError&gt;"
+                  moduleName = "todo_tca_latest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/koyama/dev/todo_tca_latest/Client/Sources/Networking/HTTPClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "1340">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
