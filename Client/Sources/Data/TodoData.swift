@@ -14,6 +14,14 @@ public struct TodoFetchAllResponse: Decodable {
 }
 
 public struct TodoAddRequest: Encodable {
+    public let task: String
+    
+    public init(task: String) {
+        self.task = task
+    }
+}
+
+public struct TodoAddResponse: Decodable {
     public let todo: Todo
     
     public init(todo: Todo) {
@@ -21,25 +29,23 @@ public struct TodoAddRequest: Encodable {
     }
 }
 
-public struct TodoAddResponse: Decodable {
-    public init() {}
-}
-
-public struct TodoEditRequest: Encodable {
-    public let id: String
+public struct TodoUpdateRequest: Encodable {
     public let todo: Todo
     
-    public init(id: String, todo: Todo) {
-        self.id = id
+    public init(todo: Todo) {
         self.todo = todo
     }
 }
 
-public struct TodoEditResponse: Decodable {
-    public init() {}
+public struct TodoUpdateResponse: Decodable {
+    public let todo: Todo
+    
+    public init(todo: Todo) {
+        self.todo = todo
+    }
 }
 
-public struct TodoRemoveRequest: Encodable {
+public struct TodoDeleteRequest: Encodable {
     public let id: String
     
     public init(id: String) {
@@ -47,6 +53,10 @@ public struct TodoRemoveRequest: Encodable {
     }
 }
 
-public struct TodoRemoveResponse: Decodable {
-    public init() {}
+public struct TodoDeleteResponse: Decodable {
+    public let id: String
+    
+    public init(id: String) {
+        self.id = id
+    }
 }

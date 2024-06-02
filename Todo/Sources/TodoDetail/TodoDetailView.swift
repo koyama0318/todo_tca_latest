@@ -14,7 +14,6 @@ public struct TodoDetailView: View {
                 Text("close")
             }
             Text(store.todo.completed ? "Done" : "")
-            Text(store.todo.id)
             Text(store.todo.task)
         }
     }

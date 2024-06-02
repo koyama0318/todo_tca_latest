@@ -1,37 +1,27 @@
 import SwiftUI
 
 public struct ListItemView: View {
-    public let item: ListItem
+    let text: String
+    let icon: Icon
+    let tapAction: () -> Void
     
-    public init(item: ListItem) {
-        self.item = item
+    public init(text: String, icon: Icon, tapAction: @escaping () -> Void) {
+        self.text = text
+        self.icon = icon
+        self.tapAction = tapAction
     }
     
     public var body: some View {
-        HStack {
-            Text(item.text)
+        HStack(spacing: 8) {
+            IconButton(icon: icon)
+            Text(text)
+                .font(.body)
+                .foregroundColor(Color.gray)
+            Spacer()
         }
+        .frame(maxWidth: .infinity)
+        .padding(.vertical, 8)
+        .padding(.horizontal, 16)
+        .onTapGesture(perform: tapAction)
     }
-}
-
-public struct ListItem: Identifiable {
-    public let id: String
-    let text: String
-    let isChecked: Bool
-    
-    public init(id: String, text: String, isChecked: Bool) {
-        self.id = id
-        self.text = text
-        self.isChecked = isChecked
-    }
-}
-
-extension ListItem {
-    static let mock: [Self] = [
-        .init(id: UUID().uuidString, text: "text1", isChecked: true),
-        .init(id: UUID().uuidString, text: "text2", isChecked: true),
-        .init(id: UUID().uuidString, text: "text3", isChecked: true),
-        .init(id: UUID().uuidString, text: "text4", isChecked: true),
-        .init(id: UUID().uuidString, text: "text5", isChecked: true),
-    ]
 }
