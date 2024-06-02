@@ -13,8 +13,8 @@ public struct TodoDetailView: View {
             Button(action: { store.send(.closeButtonTapped) }) {
                 Text("close")
             }
-            Text(store.todo.id)
-            Text(store.todo.text)
+            Text(store.todo.completed ? "Done" : "")
+            Text(store.todo.task)
         }
     }
 }

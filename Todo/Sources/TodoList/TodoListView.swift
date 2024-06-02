@@ -14,11 +14,25 @@ public struct TodoListView: View {
     
     public var body: some View {
         NavigationStack {
-            VStack {
-                ListView(
-                    items: store.todos.map { ListItem(id: $0.id, text: $0.text) },
-                    onTap: { store.send(.todoTapped(id: $0)) }
-                )
+            ScrollView {
+                VStack {
+                    FormView(
+                        text: $store.formText,
+                        placeholder: "Enter new task",
+                        buttonText: "Add",
+                        onSubmit: { store.send(.formSubmitted) }
+                    )
+                    ForEach(store.todos) { todo in
+                        ListItemView(
+                            text: todo.task,
+                            icon: Icon(
+                                type: todo.completed ? .checkmark : .square,
+                                action: { store.send(.checkboxTapped(id: todo.id)) }
+                            ),
+                            tapAction: { store.send(.todoTapped(id: todo.id)) }
+                        )
+                    }
+                }
             }
             .onAppear { store.send(.viewAppeared) }
             .navigationDestination(

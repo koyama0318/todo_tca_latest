@@ -11,6 +11,12 @@ let package = Package(
         .library(
             name: "Client",
             targets: ["Client"]),
+        .library(
+            name: "Data",
+            targets: ["Data"]),
+        .library(
+            name: "Networking",
+            targets: ["Networking"]),
     ],
     dependencies: [
         .package(url: "https://github.com/pointfreeco/swift-composable-architecture", exact: "1.10.4"),
@@ -24,7 +30,17 @@ let package = Package(
             dependencies: [
                 .product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
                 "Model",
+                "Data",
+                "Networking",
             ]
+        ),
+        .target(
+            name: "Data",
+            dependencies: []
+        ),
+        .target(
+            name: "Networking",
+            dependencies: []
         )
     ]
 )
