@@ -36,7 +36,7 @@ let package = Package(
         ),
         .target(
             name: "Data",
-            dependencies: []
+            dependencies: ["Model", "Networking"]
         ),
         .target(
             name: "Networking",

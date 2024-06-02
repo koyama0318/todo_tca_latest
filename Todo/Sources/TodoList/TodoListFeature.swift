@@ -47,15 +47,15 @@ public struct TodoListFeature {
             case .binding:
                 return .none
                 
-            case .destination(_):
+            case .destination(.presented(.detail(.close))):
+                state.destination = nil
+                return fetchAll()
+                
+            case .destination:
                 return .none
                 
             case .viewAppeared:
-                return .run { send in
-                    await send(.fetchedAll(Result {
-                        try await todoClient.fetchAll()
-                    }))
-                }
+                return state.todos.isEmpty ? fetchAll() : .none
                 
             case .todoTapped(let id):
                 if let todo = state.todos.first(where: { $0.id == id }) {
@@ -105,5 +105,14 @@ public struct TodoListFeature {
             }
         }
         .ifLet(\.$destination, action: \.destination)
+    }
+    
+    private func fetchAll() -> Effect<Action> {
+        return .run { send in
+            await send(.fetchedAll(Result {
+                try await todoClient.fetchAll()
+                
+            }))
+        }
     }
 }

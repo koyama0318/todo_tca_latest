@@ -18,11 +18,12 @@ public struct TodoDetailFeature {
     
     public enum Action: BindableAction {
         case binding(BindingAction<State>)
-        case viewAppeared
+        case formSubmitted
         case deleteButtonTapped
         case closeButtonTapped
         case updated(Result<Todo, Error>)
         case deleted(Result<Void, Error>)
+        case close
     }
     
     @Dependency(TodoClient.self) var todoClient
@@ -37,20 +38,9 @@ public struct TodoDetailFeature {
             case .binding:
                 return .none
                 
-            case .viewAppeared:
-                return .none
-                
-            case .deleteButtonTapped:
-                let id = state.todo.id
-                return .run { send in
-                    await send(.deleted(Result {
-                        try await todoClient.delete(id)
-                    }))
-                }
-                
-            case .closeButtonTapped:
+            case .formSubmitted:
                 if state.todo.task == state.formText {
-                    return close()
+                    return .send(.close)
                 }
                 let newTodo = Todo(
                     id: state.todo.id,
@@ -63,17 +53,23 @@ public struct TodoDetailFeature {
                     }))
                 }
                 
-            case .updated(.success), .deleted(.success):
-                return close()
+            case .deleteButtonTapped:
+                return .run { [id = state.todo.id] send in
+                    await send(.deleted(Result {
+                        try await todoClient.delete(id)
+                    }))
+                }
+                
+            case .closeButtonTapped, .updated(.success), .deleted(.success):
+                return .send(.close)
                 
             case .updated(.failure), .deleted(.failure):
                 print("error")
                 return .none
+                
+            case .close:
+                return .none
             }
         }
-    }
-    
-    private func close() -> Effect<Action> {
-        return .run { _ in await self.dismiss() }
     }
 }

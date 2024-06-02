@@ -1,6 +1,4 @@
 import Foundation
-import Data
-import Model
 
 public enum NetworkError: Error {
     case invalidURL
@@ -8,19 +6,12 @@ public enum NetworkError: Error {
     case decodingError
 }
 
-public enum HTTPMethod: String {
-    case get = "GET"
-    case post = "POST"
-    case put = "PUT"
-    case delete = "DELETE"
-}
-
-public func sendRequest<T: Decodable, U: Encodable>(
+public func sendRequest<T: Request, U: Response>(
     baseURL: String = "http://127.0.0.1:8080/",
     path: String = "",
     method: HTTPMethod,
-    body: U? = nil
-) async -> Result<T, NetworkError> {
+    body: T? = nil
+) async -> Result<U, NetworkError> {
     guard let url = URL(string: baseURL + path) else {
         return .failure(NetworkError.invalidURL)
     }
@@ -43,7 +34,11 @@ public func sendRequest<T: Decodable, U: Encodable>(
         return .failure(NetworkError.requestFailed)
     }
     
-    guard let decoded = try? JSONDecoder().decode(T.self, from: data) else {
+    if let emptyResponse = U.self as? EmptyResponse.Type {
+        return .success(emptyResponse.init() as! U)
+    }
+    
+    guard let decoded = try? JSONDecoder().decode(U.self, from: data) else {
         return .failure(NetworkError.decodingError)
     }
     

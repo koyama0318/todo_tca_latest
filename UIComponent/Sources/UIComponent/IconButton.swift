@@ -27,4 +27,5 @@ public enum IconType: String {
     case square
     case pencil
     case trash
+    case chevronLeft = "chevron.left"
 }
