@@ -1,11 +1,12 @@
 import Foundation
 import Model
+import Networking
 
-public struct TodoFetchAllRequest: Encodable {
+public struct TodoFetchAllRequest: Request {
     public init() {}
 }
 
-public struct TodoFetchAllResponse: Decodable {
+public struct TodoFetchAllResponse: Response {
     public let todos: [Todo]
     
     public init(todos: [Todo]) {
@@ -13,7 +14,7 @@ public struct TodoFetchAllResponse: Decodable {
     }
 }
 
-public struct TodoAddRequest: Encodable {
+public struct TodoAddRequest: Request {
     public let task: String
     
     public init(task: String) {
@@ -21,7 +22,7 @@ public struct TodoAddRequest: Encodable {
     }
 }
 
-public struct TodoAddResponse: Decodable {
+public struct TodoAddResponse: Response {
     public let todo: Todo
     
     public init(todo: Todo) {
@@ -29,7 +30,7 @@ public struct TodoAddResponse: Decodable {
     }
 }
 
-public struct TodoUpdateRequest: Encodable {
+public struct TodoUpdateRequest: Request {
     public let todo: Todo
     
     public init(todo: Todo) {
@@ -37,7 +38,7 @@ public struct TodoUpdateRequest: Encodable {
     }
 }
 
-public struct TodoUpdateResponse: Decodable {
+public struct TodoUpdateResponse: Response {
     public let todo: Todo
     
     public init(todo: Todo) {
@@ -45,7 +46,7 @@ public struct TodoUpdateResponse: Decodable {
     }
 }
 
-public struct TodoDeleteRequest: Encodable {
+public struct TodoDeleteRequest: Request {
     public let id: String
     
     public init(id: String) {
@@ -53,10 +54,6 @@ public struct TodoDeleteRequest: Encodable {
     }
 }
 
-public struct TodoDeleteResponse: Decodable {
-    public let id: String
-    
-    public init(id: String) {
-        self.id = id
-    }
+public struct TodoDeleteResponse: EmptyResponse {
+    public init() {}
 }
